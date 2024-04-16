@@ -1,0 +1,42 @@
+P1.
+// const parent = React.createElement("div", {
+//     id: 'parent'
+//     }, 
+//     [
+//         React.createElement("div", {
+//             id: 'child'
+//         }, [
+//                 React.createElement("h1", {
+//                     id: 'heading'
+//                 }, "Hello Header"),
+//                 React.createElement("h2", {
+//                     id: 'heading'
+//                 }, "Hello Header 2")
+//             ]
+//         ),
+//         React.createElement("div", {
+//             id: 'child2'
+//         }, [
+//                 React.createElement("h1", {
+//                     id: 'heading'
+//                 }, "Hello Header"),
+//                 React.createElement("h2", {
+//                     id: 'heading'
+//                 }, "Hello Header 2")
+//             ]
+//         )
+//     ]
+// );
+// const heading = React.createElement("h2", {
+//     id: 'heading'
+// }, "Hello world from React World.");
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// console.log(parent); //object
+// root.render(parent);
+
+//html
+<!-- <script src="./index.js"></script> -->
+<!-- No longer need for these CDN links as we've installed React packages -->
+<!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->

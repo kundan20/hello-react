@@ -1,42 +1,42 @@
+import React from "react";
+import ReactDOM  from "react-dom/client";
 
-{/* <div id="parent">
-    <div id="child">
-        <h1 id="header"></h1>
-        <h2 id="header"></h2>
-    </div>
-</div> */}
-const parent = React.createElement("div", {
-    id: 'parent'
-    }, 
-    [
-        React.createElement("div", {
-            id: 'child'
-        }, [
-                React.createElement("h1", {
-                    id: 'heading'
-                }, "Hello Header"),
-                React.createElement("h2", {
-                    id: 'heading'
-                }, "Hello Header 2")
-            ]
-        ),
-        React.createElement("div", {
-            id: 'child2'
-        }, [
-                React.createElement("h1", {
-                    id: 'heading'
-                }, "Hello Header"),
-                React.createElement("h2", {
-                    id: 'heading'
-                }, "Hello Header 2")
-            ]
-        )
-    ]
-);
-const heading = React.createElement("h2", {
+const heading1 = React.createElement("span", {
     id: 'heading'
-}, "Hello world from React World.");
+}, "Hello React using React element");
+
+const heading2 = (
+    <h1 className="heading" tabIndex="1">
+        {heading1}
+        Hello React using JSX
+    </h1>
+);
+
+const Heading3 = function() {
+    return (
+    <h1 className="heading" tabIndex="5">
+        Hello React using functional component
+    </h1>
+    ); 
+}
+const number = 10000;
+//React functional component:
+const HeadingComponent1 = () => {
+    return (
+        <div className="container">
+            { heading2 }
+            {Heading3()}
+            <Heading3 />
+            <Heading3></Heading3>
+            <span>{number}</span>
+            <h1>Hello Functional Component.🚀</h1>
+        </div>
+    );
+}
+const HeadingComponent2 = () => (
+    <h1 className="heading">Hello Functional Component.</h1>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-console.log(parent); //object
-root.render(parent);
+// root.render(heading);
+root.render(<HeadingComponent1 />);
