@@ -88,10 +88,10 @@
 const cart = ['shoes', 'kurtas', 'shorts'];
 const cart1 = [];
 
-// createOrder(cart).then((orderId) => {console.log(orderId); return orderId; })
-//         .then((orderId) => proceedToPayment(orderId))
-//         .then((paymentDetail) => console.log(paymentDetail))
-//         .catch((err) => console.log(err.message))
+createOrder(cart).then((orderId) => {console.log(orderId); return orderId; })
+        .then((orderId) => proceedToPayment(orderId))
+        .then((paymentDetail) => console.log(paymentDetail))
+        .catch((err) => console.log(err.message))
 
 // function proceedToPayment(orderId) {
 //     return new Promise((resolve, reject) => {

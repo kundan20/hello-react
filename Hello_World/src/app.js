@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import ProductSummary from "./components/ProductSummary";
+import Todo from "./components/Todo";
 
 const AppLayout = () => {
     return (
@@ -37,6 +38,10 @@ const AppRouter = createBrowserRouter([
             {
                 path: '/products/:pId',
                 element: <ProductSummary />
+            },
+            {
+                path: '/todo',
+                element: <Todo />
             }
         ],
         errorElement: <Error />
