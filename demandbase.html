@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Html</title>
+</head>
+
+<body>
+    <div id="root">
+
+    </div>
+    <script>
+
+        // React Component
+        // const App = ({ name, children }) => {
+        // const [fname, setFname] = React.useState(name)
+        // const [count, setCount] = React.useState(0)
+
+        // // return <div class="heading-container">
+        //     This is
+        //     <h1 key="10" id="heading">Demandbase</h1>
+        //     <h2 id="heading">is Awesome!!</h2>
+        //     <input type="text" value={fname} onchange={e => setFname(e.target.value)} />
+        //     <button onclick={() => setCount(count + 1)}>Click</button>
+        //     {count}
+        //     <>
+        //         <div>
+        //             React
+        //         </div>
+        //         <div>
+        //             Fragment
+        //         </div>
+        //     </>
+        //     {children ? children : ""}
+        // </div>
+        // }
+
+        // A Dom Object created by this React component :
+        const DomOfApp = {
+            "type": "div",
+            "props": {
+                "class": "heading-container",
+                "children": {
+                    "0": "This is",
+                    "1": {
+                        "type": "h1",
+                        "props": {
+                            "key": "10",
+                            "id": "heading",
+                            "children": "Demandbase"
+                        }
+                    },
+                    "2": {
+                        "type": "h2",
+                        "props": {
+                            "id": "heading",
+                            "children": "is Awesome!!"
+                        }
+                    },
+                    "3": {
+                        "type": "input",
+                        "props": {
+                            "type": "text",
+                            "value": "Surya"
+                        }
+                    },
+                    "4": {
+                        "type": "button",
+                        "props": {
+                            "children": "Click"
+                        }
+                    },
+                    "5": 0,
+                    "6": {
+                        "props": {
+                            "children": {
+                                "0": {
+                                    "type": "div",
+                                    "props": {
+                                        "children": "React"
+                                    }
+                                },
+                                "1": {
+                                    "type": "div",
+                                    "props": {
+                                        "children": "Fragment"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "7": ""
+                }
+            }
+        }
+        // Create a render function which takes this object and renders it to the dom.
+        renderToDom(DomOfApp, document.getElementById("root"))
+
+        function renderToDom(DomOfApp, domNode) {
+            
+
+        }
+    </script>
+
+
+
+<div class="heading-container">
+    This is
+    <h1 key="10" id="heading">Demandbase</h1>
+    <h2 id="heading">is Awesome!!</h2>
+    <input type="text" value='helo' onchange={textChange()} />
+    <button onclick="count()">Click</button>
+    0
+    <div>
+        React
+    </div>
+    <div>
+        Fragment
+    </div>
+</div>
+</body>
+
+</html>
